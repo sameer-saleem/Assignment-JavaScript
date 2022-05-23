@@ -1,0 +1,167 @@
+body {
+  font-family: "Odibee Sans", cursive;
+  background: #fee680 !important;
+  overflow-x: hidden;
+}
+.changing-img img {
+  transition: 0.4s ease-in-out;
+  margin: 50px 0;
+}
+h1,
+h2 {
+  font-family: "Odibee Sans", cursive;
+}
+
+header {
+  background: #fbfdfa;
+  box-shadow: 0px 0px 3px 0px #0000008c;
+  padding: 5px 0;
+  margin-bottom: 50px;
+}
+
+header img {
+  width: 150px;
+}
+
+.headings {
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 20px;
+  max-width: 445px;
+  margin: 0 auto 20px;
+  min-height: 225px;
+}
+
+.headings h2 {
+  font-size: 35px;
+  margin: 0;
+  font-style: italic;
+}
+
+.headings h2 strong {
+  color: #f00;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.headings h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.change-hdng-colors {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.theme-btn {
+  border: 2px solid transparent;
+  background: #000;
+  color: #fee680;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.theme-btn:hover {
+  background: transparent;
+  border-color: #000;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+button {
+  transition: 0.4s ease-in-out;
+}
+
+.changing-img {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.changing-img h2 {
+  font-weight: bold;
+  font-size: 35px;
+  color: #000;
+  font-family: cursive;
+  line-height: 65px;
+}
+
+.changing-img h2 strong {
+  display: block;
+  text-align: center;
+  color: #f00;
+  font-style: italic;
+  font-weight: 900;
+  background: #000;
+  max-width: 360px;
+  margin: auto;
+}
+
+.imgChngBtns {
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bulb-on-off {
+  margin-bottom: 50px;
+}
+
+.bulb-on-off h2 {
+  font-size: 35px;
+  text-align: center;
+  font-family: cursive;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-weight: bold;
+}
+
+.bulb-on-off img {
+    margin: auto;
+    transition: 0.8s ease-in-out;
+    display: table;
+    transform: rotate(0deg);
+}
+
+.bulb-on-off img:hover {
+    transform: rotate(360deg) scale(1.4);
+}
+
+.paras {
+}
+
+.paras h2 {
+  margin-bottom: 50px; /* display: table; */
+  text-align: center;
+  font-size: 35px;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.paras p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.paras .theme-btn {
+  margin: 30px auto 50px;
+  display: table;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Color Dynamic</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto text-center">
+            <img
+              src="./images/logo.png"
+              alt="logo.png"
+              class="animate__animated animate__bounce animate__infinite animate__delay-1s"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="headings" id="hdngs">
+          <h1
+            class="animate__animated animate__lightSpeedInRight animate__delay-0.8"
+          >
+            You Wanna Be Comfortable,<br />
+            Or You Wanna Grow?
+          </h1>
+          <h2
+            class="animate__animated animate__lightSpeedInLeft animate__delay-0.8"
+          >
+            Cause You ``Can't Do Both``.
+          </h2>
+        </div>
+        <div class="change-hdng-colors">
+          <button
+            onclick="HandleBG('bG-color')"
+            class="theme-btn animate__animated animate__fadeInLeft"
+          >
+            Change The Heading BG-Color
+          </button>
+          <button
+            onclick="HandleColor('txt-color')"
+            class="theme-btn animate__animated animate__fadeInRight"
+          >
+            Change The Heading Text-Color
+          </button>
+        </div>
+      </div>
+      <div class="changing-img">
+        <h2 class="animate__animated animate__flipInX animate__delay-1s">Let's Play With Image, Also
+             <strong class="animate__animated animate__pulse animate__infinite">``focus on Quote``</strong></h2>
+        <img src="./images/codeImg.webp" alt="codeImg.webp" id="ChanginImg" />
+      </div>
+      <div class="imgChngBtns">
+        <button onclick="imgChnage('show')" 
+        class="theme-btn animate__animated animate__fadeInLeft animate__delay-1s">
+          Show Image
+        </button>
+        <button onclick="imgChnage('big')" class="theme-btn animate__animated animate__fadeInLeft animate__delay-1s">Big Image</button>
+        <button onclick="imgChnage('small')" class="theme-btn animate__animated animate__fadeInLeft animate__delay-1s">
+          Small Image
+        </button>
+        <button onclick="imgChnage('hide')" class="theme-btn animate__animated animate__fadeInLeft animate__delay-1s">
+          Hide Image
+        </button>
+      </div>
+      <div class="bulb-on-off">
+        <h2 class="animate__animated animate__fadeInLeft">
+          On Mouse Over Blub Will On and On Mouse Out Bulb Will OFF. Try it!
+        </h2>
+        <img
+          src="./images/pic_bulboff.gif"
+          onmouseover="Changer('over',this)"
+          onmouseout="Changer('out',this)"
+        />
+      </div>
+      <div class="paras" id="paragph">
+        <h2 class="animate__animated animate__fadeInLeft">Let's Change The Paragraph Color.</h2>
+        <p class="animate__animated animate__fadeInRight">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+          explicabo ut cumque voluptas illum nemo iste ex culpa, eaque
+          cupiditate cum aliquam minima quas animi veniam. Laboriosam ab quo
+          aperiam?
+        </p>
+        <p class="animate__animated animate__fadeInLeft">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+          explicabo ut cumque voluptas illum nemo iste ex culpa, eaque
+          cupiditate cum aliquam minima quas animi veniam. Laboriosam ab quo
+          aperiam?
+        </p>
+        <p class="animate__animated animate__fadeInRight">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+          explicabo ut cumque voluptas illum nemo iste ex culpa, eaque
+          cupiditate cum aliquam minima quas animi veniam. Laboriosam ab quo
+          aperiam?
+        </p>
+        <p class="animate__animated animate__fadeInLeft">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+          explicabo ut cumque voluptas illum nemo iste ex culpa, eaque
+          cupiditate cum aliquam minima quas animi veniam. Laboriosam ab quo
+          aperiam?
+        </p>
+        <button onclick="paraColors()" class="theme-btn animate__animated animate__fadeInLeft">
+          Change Paragraph Color
+        </button>
+      </div>
+    </section>
+    <footer class="animate__animated animate__fadeInLeft">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center animate__animated animate__pulse animate__infinite">Made By Sameer!</div>
+          <div class="col-md-6 text-center animate__animated animate__pulse animate__infinite">
+            Hope you must loved it... &#128151;
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="Index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</html>
